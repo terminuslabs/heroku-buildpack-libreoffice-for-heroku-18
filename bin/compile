@@ -43,3 +43,15 @@ mkdir -p $(dirname $PROFILE_PATH)
 INSTALLED_VERSION=$(ls $INSTALL_DIR/opt)
 echo "export PATH=$RUNTIME_INSTALL_PATH/opt/$INSTALLED_VERSION/program:\$PATH" >> $PROFILE_PATH
 echo "export OFFICE_PATH=$RUNTIME_INSTALL_PATH/opt/$INSTALLED_VERSION" >> $PROFILE_PATH
+
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/readmes"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/help"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/extensions"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/config"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/xslt"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/wizards"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/template"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/emojiconfig"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/fingerprint"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/program/wizards"
+rm -rf "$VENDOR_DIR/libreoffice/opt/libreoffice7.1/share/autocorr"
